@@ -62,10 +62,13 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <p>change the IP address allocation from "Dynamic"--> "Static"</p>
 <img src="https://user-images.githubusercontent.com/142059616/264232363-b62d0a59-6f1a-4126-9b01-77554dd71ad0.png">
 <h4>Changing the Ip adress to static will allow it to remain constant over time, this means that the ip adrdresss is always reachable athe same address makinfg it easier to manage and access them. It is commonly used in Servers such as this one </h4>
-
+<br>
 </p>
+<h3>Login to the domain controller and enable ICMPv4 in on th local windows firewall to ensure connectivity between Client and Domain Controller</h3>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Log into both the Domain controller and Client VM's using Remote Desktop Connection
+
+  
 </p>
 <br />
 
