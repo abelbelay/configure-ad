@@ -64,12 +64,17 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <h4>Changing the Ip adress to static will allow it to remain constant over time, this means that the ip adrdresss is always reachable athe same address makinfg it easier to manage and access them. It is commonly used in Servers such as this one </h4>
 <br>
 </p>
-<h3>Login to the domain controller and enable ICMPv4 in on th local windows firewall to ensure connectivity between Client and Domain Controller</h3>
+<h3>Login to the domain controller and enable ICMPv4 in on the local windows firewall to ensure connectivity between Client and Domain Controller</h3>
 <p>
 Log into both the Domain controller and Client VM's using Remote Desktop Connection
-
-  
+<img src="https://user-images.githubusercontent.com/142059616/264488760-9adfebcd-292a-4eb3-81fa-a591791160f6.png" height="60%" width="60%">
 </p>
+<p>Click the start/windows key and select "windows defender firewall with advanced security"</p>
+<img src="https://user-images.githubusercontent.com/142059616/264489496-04ab4f1b-61b8-4e8a-9dc4-11e4587a2dc2.png">
+<p>Go to "Inbound rules" tab on the left, sort by "protocol" then right-click both "file printer sharing (echo request) icmpv4" and "virtual machine monitoring (echo request) icmpv4" and select "enable rule"</p>
+<img src="https://user-images.githubusercontent.com/142059616/264491122-6f7d7e75-e05b-46a7-b824-fa8d1b978e5a.png">
+Now when you ping the Domain controller the fireall isnt blocking the connection. You are now able to ping your client vm to the domain controller
+<img src="https://user-images.githubusercontent.com/142059616/264491676-6cfe43e5-9179-4a87-8b0a-0742c98468cc.png">
 <br />
 
 <p>
