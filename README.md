@@ -77,10 +77,22 @@ Now when you ping the Domain controller the fireall isnt blocking the connection
 <img src="https://user-images.githubusercontent.com/142059616/264491676-6cfe43e5-9179-4a87-8b0a-0742c98468cc.png">
 <br />
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
+<h3>Install Active Directory</h3>
+<p>Go to manage-->"add roles and features"
+<img src="https://user-images.githubusercontent.com/142059616/264793219-3dc7af07-f20d-420f-a335-69dd4361525e.png">
+  Once the "add Role and feature wizard is open, select "next" twice until the "Server Roles" tab is open.Then you want to select "Active directory Domain Services" and then click "add features.
+<img src="https://user-images.githubusercontent.com/142059616/264794408-b62c352f-5079-4855-ae27-3ceba8281732.png">
+  Select "next" 3 more times until the "install" button appears and click that</p>
+  
+
+<p> go to the "Manage" tab on the right and select "promote server to a domain controller"
+<img src="https://user-images.githubusercontent.com/142059616/264796118-fc18033c-3ec0-4b00-990e-30114a8d858e.png">
+  Select "Add a new forest" and enter a root domain name. For this example we will call it mydomain.com
+  <img src="https://user-images.githubusercontent.com/142059616/264796711-87e2eec8-d01f-4419-b3dd-207414aa12c7.png">
+ <li> Next you will be prompted to enter a password for the domain.
+ <li>After that it will allow you to install your domain services
+ <li>You will then be automatically signed out
+ <li>Log back into DC-1 as mydomain.com\labuser
+  </p>
 <br />
+<h3>Create an Admin and Normal User Account in Active Directory</h3>
