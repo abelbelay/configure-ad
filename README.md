@@ -176,6 +176,18 @@ Now when you ping the Domain controller the fireall isnt blocking the connection
 <h5>SUCCESSFUL!</h5>
 <img src="https://user-images.githubusercontent.com/142059616/264951442-d01ddf4a-add0-48c5-a88f-c75cbab1e949.png">
 <br>
-<h4>Resetting Passwords</h4>
-<
+<h4>Resetting Passwords and Unlocking Accounts</h4>
+<p>Go to the "_EMPLOYEES" tab in "Active Directory Users & Computers
+<li>right click a user</li>
+  <li>go to "Reset Password"</li>
+  <img src="https://user-images.githubusercontent.com/142059616/264955764-1f5ea162-8782-41cf-8f85-76e780a0898a.png">
+  Enter new password
+  <img src="https://user-images.githubusercontent.com/142059616/264956039-46035929-1619-45e2-84fe-693a99a6399f.png">
+  <h5>To unlock account, right-click, select properties-->"Account-->check "unlock account"  </h5>
+  <img src="https://user-images.githubusercontent.com/142059616/264956736-dc5ca3e2-6af5-4402-a91a-281015b4d409.png">
+</p>
+<br>
+<hr>
+<h2>ALL DONE! GREAT WORK!!😊</h2>
+</h2>
 
