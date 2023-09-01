@@ -154,11 +154,8 @@ Now when you ping the Domain controller the fireall isnt blocking the connection
 <li>Click "OK" Twice
 <img src="https://user-images.githubusercontent.com/142059616/264937012-73d37857-20d9-459d-bcbf-186bfddfad7c.png">
 <p><img src="https://user-images.githubusercontent.com/142059616/264937708-ad3a2592-64bf-47f4-a38b-edd7abd6bdc1.png">
-<i>You can now log into Client-1 as a normal, non-administrative user now, and are now a domain user.</i></p>
+<p><i>You can now log into Client-1 as a normal, non-administrative user now, and are now a domain user.</i></p>
+  </p>
+<p>
   
-</li>
-  
-</li>
-  
-</li>
 </p>
