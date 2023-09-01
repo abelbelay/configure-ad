@@ -96,3 +96,37 @@ Now when you ping the Domain controller the fireall isnt blocking the connection
   </p>
 <br />
 <h3>Create an Admin and Normal User Account in Active Directory</h3>
+<p>
+  Press the ⊞ Win key and type in "Active Directory Users & Computers"
+  <img src="https://user-images.githubusercontent.com/142059616/264802035-5d100dbb-26ed-42c1-8449-c27e9bbaf295.png">
+  <i>In this example we will create something called an Organizational unit(OU). An organizational unit (OU) in Active Directory is like a digital folder that helps you organize and manage your resources, such as users, computers, and other network objects. It's a way to group similar items together for easier management.</i>
+  </p>
+  <p>Right click "mydomain"-->New-->Organizational Units
+  <img src="https://user-images.githubusercontent.com/142059616/264803273-933dcaca-f628-4d7e-963e-418f5e5591e4.png">
+  </p>
+  <p>We are going to name one "_EMPLOYEES" & "_ADMINS"
+  <img src="https://user-images.githubusercontent.com/142059616/264805279-a6b5d81e-9faa-4724-ab06-96eaf30488b8.png">
+  </p>
+<p>We are going to create an admin.</p>
+<img src="https://user-images.githubusercontent.com/142059616/264808964-e7da80dc-4229-4c49-9d1a-76bacd40be8e.png" height="50%" width="50%">
+  <img src="https://user-images.githubusercontent.com/142059616/264809437-259462e5-08df-4ead-8234-dc21ceea7382.png" height="50%" width="50%">
+  <img src="https://user-images.githubusercontent.com/142059616/264810862-727fd098-bd47-4257-87b1-40976fc51f7d.png" height="50%" width="50%">
+</p>
+<p>Now we have to make the user a domain admin.
+  <li>
+    Right click the user and go to "Properties"
+    <li> CLick the "Member Of" tab 
+      <li>Select "Add"
+  </li>
+  <img src="https://user-images.githubusercontent.com/142059616/264812861-294eb764-4f64-45eb-a171-dfe02ff7a7a8.png">
+</p>
+<p>Type in "Domain Admins", then select "ok"
+<img src="https://user-images.githubusercontent.com/142059616/264813130-a4d44d5d-cce3-4d0b-b25c-6c0e883bd955.png">
+<i>We have now created an admin user. Now we will log out of DC-1 and log in as the admin, which in this case is "abel_admin"</i>
+</p>
+<br>
+<h3>Join Client-1 to the Domain</h3>
+<h4>Set Client-1's DNS settings to the Domain Controllers Private IP address</h4>
+<p>Go to Client-1's Azure portal @portal.azure.com, select the "Networking tab</p>
+<img src="https://user-images.githubusercontent.com/142059616/264890026-c6154d9d-10fc-4d6b-a3c9-f11ce5e59412.png">
+
