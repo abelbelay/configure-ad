@@ -127,6 +127,38 @@ Now when you ping the Domain controller the fireall isnt blocking the connection
 <br>
 <h3>Join Client-1 to the Domain</h3>
 <h4>Set Client-1's DNS settings to the Domain Controllers Private IP address</h4>
-<p>Go to Client-1's Azure portal @portal.azure.com, select the "Networking tab</p>
+<p>Go to Client-1's Azure portal @portal.azure.com, select the "Networking tab and click on the network interface-"client-1492_z1"</p>
 <img src="https://user-images.githubusercontent.com/142059616/264890026-c6154d9d-10fc-4d6b-a3c9-f11ce5e59412.png">
-
+<p>Go to "DNS servers", type in the DC-1 private ip address, which is 10.0.0.4
+<img src="https://user-images.githubusercontent.com/142059616/264909532-63189f1b-45de-459f-bfe5-ea97479005b5.png">
+</p>
+<p><li>Right-click the ⊞ Win key and select "systems"
+  <li>Then select "Rename this PC"</li>
+  <li>The finally select "Change"</li>
+<li>
+  <img src="https://user-images.githubusercontent.com/142059616/264929013-991a813a-8362-4051-9bd7-f5de6ea86711.png">
+</p>
+<p>
+  Click the Domain checkbox  and enter the root domain name of the domain controller, which is "mydomain.com"
+  <img src="https://user-images.githubusercontent.com/142059616/264930188-9664a18b-2d72-482c-83bf-3193d131e05e.png">
+</p>
+<p>You will then be prommpted to enter the name and password of the admin account we created earlier, which is "abel_admin"</p>
+<p><i>You caan  now log into your admin account from Client-1 and are connected to Active directory</i></p>
+<h4>Allow "Domain Users" access to remote desktop</h4>
+<p><li>Log into Client-1 as admin(ex.abel_admin)
+<li>Right-click the ⊞ Win key and select "Systems"
+<li>Select "Remote Desktop"
+<li>Click "Select Users That Can Remotely Access Desktop Remotely"
+<li>Click "add"
+<li>Type in "Domain Users"
+<li>Click "OK" Twice
+<img src="https://user-images.githubusercontent.com/142059616/264937012-73d37857-20d9-459d-bcbf-186bfddfad7c.png">
+<p><img src="https://user-images.githubusercontent.com/142059616/264937708-ad3a2592-64bf-47f4-a38b-edd7abd6bdc1.png">
+<i>You can now log into Client-1 as a normal, non-administrative user now, and are now a domain user.</i></p>
+  
+</li>
+  
+</li>
+  
+</li>
+</p>
