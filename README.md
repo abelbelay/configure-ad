@@ -156,6 +156,26 @@ Now when you ping the Domain controller the fireall isnt blocking the connection
 <p><img src="https://user-images.githubusercontent.com/142059616/264937708-ad3a2592-64bf-47f4-a38b-edd7abd6bdc1.png">
 <p><i>You can now log into Client-1 as a normal, non-administrative user now, and are now a domain user.</i></p>
   </p>
+<h4>Create a bunch of additional users and attempt to log into client-1 with one of the users</h4>
 <p>
-  
+  <li>Go to DC-1 Virtual Machine
+  <li>'
+  Open Powershell and run as <i>administrator</i>
+    <li>
+      paste the contents of the <a href="https://github.com/joshmadakor1/AD_PS/blob/master/Generate-Names-Create-Users.ps1"> script</a> into it
+      <img src="https://user-images.githubusercontent.com/142059616/264946294-e53f5478-2b75-4bb0-927e-d9f4547e96ff.png">
+   <p> Run the script</p>
+  <img src="https://user-images.githubusercontent.com/142059616/264949498-60f9b756-ef7d-421e-8ca8-c330c64a2ed4.png">
 </p>
+<p>
+  The users have been created!
+  <img src="https://user-images.githubusercontent.com/142059616/264950444-07661d03-1c34-4f60-abc9-70651c58498f.png">
+</p>
+<h5>Now we will attempt to log in with one of the other accounts in the Client-1 VM</h5>
+<img src="https://user-images.githubusercontent.com/142059616/264951121-2974209e-3d15-4209-ac54-2a894e056552.png">
+<h5>SUCCESSFUL!</h5>
+<img src="https://user-images.githubusercontent.com/142059616/264951442-d01ddf4a-add0-48c5-a88f-c75cbab1e949.png">
+<br>
+<h4>Resetting Passwords</h4>
+<
+
